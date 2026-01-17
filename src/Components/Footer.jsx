@@ -2,7 +2,9 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div>Footer</div>
+    <div className='text-center p-4 font-bold bg-neutral-900 mt-20'>
+        <h1>GameStore 2025</h1>
+    </div>
   )
 }
 
