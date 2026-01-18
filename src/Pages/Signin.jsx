@@ -1,6 +1,7 @@
 import React from 'react'
 import { useRef } from 'react'
 import { useNavigate } from 'react-router-dom'
+import json from './src/assets/registered.json'
 
 const Signin = () => {
 
@@ -11,7 +12,7 @@ const Signin = () => {
   const handleSubmit = (e)=>{
     e.preventDefault()
     console.log(username.current.value, password.current.value)
-    fetch('./src/assets/registered.json')
+    fetch(json)
     .then(r=>r.json())
     .then(data=>{
       const registeredUsername = username.current.value

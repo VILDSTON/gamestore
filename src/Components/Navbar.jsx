@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Icon from '../assets/Icon.png'
+import ProfilePicture from './src/assets/UnknownUser.jpeg'
 
 const Navbar = () => {
   return (
@@ -23,7 +24,7 @@ const Navbar = () => {
                 </li>
             </ul>
             <div className='flex justify-center items-center mr-5'>
-                <img id='usersprofileimages' src="./src/assets/UnknownUser.jpeg" alt="" className='h-10 w-10 rounded-full'/>
+                <img id='usersprofileimages' src={ProfilePicture} alt="" className='h-10 w-10 rounded-full'/>
             </div>
     </nav>
   )
