@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Icon from '../assets/Icon.png'
-import ProfilePicture from './src/assets/UnknownUser.jpeg'
+import ProfilePicture from '../assets/UnknownUser.jpeg'
 
 const Navbar = () => {
   return (

@@ -1,7 +1,7 @@
 import React from 'react'
 import { useRef } from 'react'
 import { useNavigate } from 'react-router-dom'
-import json from './src/assets/registered.json'
+import json from '../assets/registered.json'
 
 const Signin = () => {
 
