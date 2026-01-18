@@ -1,27 +1,34 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 const Home = () => {
+
+    useEffect(()=>{
+      Aos.init()
+    }, [])
+
   return (
     <div className=''>
         <div className='flex justify-center items-center gap-30'>
-            <div className='font-bold text-4xl flex flex-col gap-6'>
+            <div data-aos = 'fade-up' className='font-bold text-4xl flex flex-col gap-6'>
                 <h1>Welcome to GameStore, <br /> Buy Games for <span className='text-blue-400'>Fair Price</span></h1>
-                <button className='bg-gradient-to-l text-2xl from-cyan-500 to-blue-500 text-white py-2 px-4 w-[180px] shadow-2xl hover:shadow-blue-400 hover:scale-110 duration-500 rounded-3xl'>Get Started</button>
+                <Link to='/products' className='flex justify-center items-center bg-gradient-to-l text-2xl from-cyan-500 to-blue-500 text-white py-2 px-4 w-[180px] shadow-2xl hover:shadow-blue-400 hover:scale-110 duration-500 rounded-3xl'>Get Started</Link>
             </div>
-            <div>
+            <div data-aos = 'fade-up'>
               <img src="https://static.vecteezy.com/system/resources/thumbnails/046/032/707/small/tech-and-gadget-3d-icon-png.png" alt="" className='h-94 hover:blur-[1px] duration-500'/>
             </div>
         </div>
 
         <div className='mt-40 flex justify-center items-center flex-col gap-10'>
-          <h1 className='text-4xl font-bold text-center'>About Us</h1>
-          <p className='text-lg text-center bg-neutral-900 rounded-3xl p-5 w-[800px] h-[170px] flex justify-center items-center flex-col shadow-2xl font-medium'>At GameStore, we believe in providing gamers with the best selection of games at fair prices. <br /> Our team is passionate about gaming and is dedicated to helping you find the perfect game for your needs. <Link to='/about' className='text-blue-400 inline bg-gradient-to-l from-cyan-500 to-blue-500 text-white mt-3 py-1 px-2 rounded-3xl hover:bg-graident-to-r hover:from-blue-500 hover:to-cyan-500 hover:scale-110 duration-500'>More about us</Link></p>
+          <h1 data-aos = 'fade-right' className='text-4xl font-bold text-center text-blue-400'>About Us</h1>
+          <p data-aos = 'fade-right' className='text-lg text-center bg-neutral-900 rounded-3xl p-5 w-[800px] h-[170px] flex justify-center items-center flex-col shadow-2xl font-medium'>At GameStore, we believe in providing gamers with the best selection of games at fair prices. <br /> Our team is passionate about gaming and is dedicated to helping you find the perfect game for your needs. <Link to='/about' className='text-blue-400 inline bg-gradient-to-l from-cyan-500 to-blue-500 text-white mt-3 py-1 px-2 rounded-3xl hover:bg-graident-to-r hover:from-blue-500 hover:to-cyan-500 hover:scale-110 duration-500'>More about us</Link></p>
         </div>
 
         <div className='mt-40 flex justify-center items-center flex-col gap-10 mb-20'>
-          <h1 className='text-4xl font-bold text-center'>Pricing Plans</h1>
-          <div className='flex justify-center items-center gap-10'>
+          <h1 data-aos = 'fade-left' className='text-4xl font-bold text-center text-blue-400'>Pricing Plans</h1>
+          <div data-aos = 'fade-left' className='flex justify-center items-center gap-10'>
             <div className='bg-neutral-900 rounded-3xl p-5 w-[350px] h-[400px] flex flex-col justify-between items-center gap-6 shadow-2xl hover:scale-105 duration-500'>
               <h2 className='text-3xl font-bold mt-5'>Basic</h2>
               <p className='text-4xl font-bold'>$9.99</p>
@@ -56,8 +63,8 @@ const Home = () => {
         </div>
 
         <div className='mb-20 flex justify-center items-center flex-col gap-5'>
-          <h2 className='text-3xl font-bold mt-5'>Frequently Asked Questions</h2>
-          <ul className='flex flex-col gap-3 mt-3'>
+          <h2 data-aos = 'fade-up' className='text-3xl font-bold mt-5 text-blue-400'>Frequently Asked Questions</h2>
+          <ul data-aos = 'fade-up' className='flex flex-col gap-3 mt-3'>
             <li className='bg-neutral-900 p-3 rounded-3xl shadow-2xl'>
               <h3 className='font-semibold'>What is GameStore?</h3>
               <p>GameStore is an online platform where you can buy and sell video games at fair prices</p>
@@ -82,12 +89,16 @@ const Home = () => {
               <h3 className='font-semibold'>What if hackers try to hack my account?</h3>
               <p>We take account security seriously and implement measures to protect your information</p>
             </li>
+            <li className='bg-neutral-900 p-3 rounded-3xl shadow-2xl'>
+              <h3 className='font-semibold'>How I can sell my game?</h3>
+              <p>You can sell your game by listing it on our <Link to='/create' className='text-blue-400'>Create Page</Link> and setting a price</p>
+            </li>
           </ul>
         </div>
   
         <div className='mb-20 flex justify-center items-center flex-col gap-5'>
-          <h2 className='text-3xl font-bold mt-5 mb-5 flex justify-center items-center'>Popular Games</h2>
-          <div className='flex justify-center items-center gap-10 mb-10 flex-wrap w-[90%]'>
+          <h2 data-aos = 'fade-up' className='text-3xl font-bold mt-5 mb-5 flex justify-center items-center text-blue-400'>Popular Games</h2>
+          <div data-aos = 'fade-up' className='flex justify-center items-center gap-10 mb-10 flex-wrap w-[90%]'>
             <div className='bg-neutral-900 rounded-3xl p-5 w-[300px] h-[550px] flex flex-col justify-around items-center gap-6 shadow-2xl hover:scale-105 duration-500'>
               <img src="https://cdn.displate.com/artwork/270x380/2023-06-12/6e217abc7f5bb5d0dc56e68752193a11_5c51574f5f2f216f9ef25a0d08fa6400.jpg" alt="" className='rounded-xl h-[300px] w-[220px]'/>
               <p className='text-3xl font-bold text-green-500'>$10.99</p>
@@ -126,12 +137,12 @@ const Home = () => {
             </div>
           </div>
 
-          <div className='flex justify-center items-center'>
+          <div data-aos="fade-up" className='flex justify-center items-center'>
             <Link to='/products' className='bg-gradient-to-l flex justify-center items-center mb-5 font-semibold from-cyan-500 to-blue-500 text-white py-2 px-4 w-[150px] shadow-2xl hover:scale-110 duration-500 rounded-3xl'>View More</Link>
           </div>
 
-        <div className='mt-20 mb-20'>
-            <h1 className='text-3xl font-bold text-center mb-10'>Follow Us</h1>
+        <div data-aos="flip-left" className='mt-20 mb-20'>
+            <h1 className='text-3xl font-bold text-center mb-10 text-blue-400'>Follow Us</h1>
           <div className='flex justify-center items-center gap-10'>
               <a href="https://www.facebook.com" target="_blank">
                 <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" className='h-10 hover:scale-110 duration-500'/>
@@ -146,7 +157,7 @@ const Home = () => {
                 <img src="https://cdn-icons-png.flaticon.com/512/733/733561.png" alt="LinkedIn" className='h-10 hover:scale-110 duration-500'/>
               </a>
             </div>
-          </div>
+        </div>
         </div>
     </div>
   )
