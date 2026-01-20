@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import { useState } from 'react'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
+import carticon from '../assets/shopping-cart.png'
 
 const Products = () => {
 
@@ -24,7 +25,10 @@ const Products = () => {
                 <img src={p.image} className="w-[200px] h-[250px] rounded-xl" />
                 <h2 className="text-lg font-bold mt-2 text-center">{p.title}</h2>
                 <p className="text-green-500 font-semibold">${p.price}</p>
-                <button className="mt-3 w-full font-semibold bg-blue-500 py-2 rounded-2xl">Buy Game</button>
+                <div className='w-full flex justify-center items-center bg-blue-500 py-2 rounded-2xl gap-3'>
+                  <button className="font-semibold ">Buy Game</button>
+                  <img src={carticon} alt="Cart Icon" className='w-4 h-4'/>
+                </div>
               </div>
             )
         })}

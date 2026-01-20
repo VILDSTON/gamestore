@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
+import carticon from '../assets/shopping-cart.png'
 
 const Home = () => {
 
@@ -30,7 +31,7 @@ const Home = () => {
           <h1 data-aos = 'fade-left' className='text-4xl font-bold text-center text-blue-400'>Pricing Plans</h1>
           <div data-aos = 'fade-left' className='flex justify-center items-center gap-10'>
             <div className='bg-neutral-900 rounded-3xl p-5 w-[350px] h-[400px] flex flex-col justify-between items-center gap-6 shadow-2xl hover:scale-105 duration-500'>
-              <h2 className='text-3xl font-bold mt-5'>Basic</h2>
+              <h2 className='text-3xl font-bold mt-5 text-blue-300'>Basic</h2>
               <p className='text-4xl font-bold'>$9.99</p>
               <ul className='text-center flex flex-col gap-1 font-medium'>
                 <li>Access to 100+ games</li>
@@ -40,7 +41,7 @@ const Home = () => {
               <button className='bg-gradient-to-l mb-5 font-semibold from-cyan-500 to-blue-500 text-white py-2 px-4 w-[150px] shadow-2xl hover:scale-110 duration-500 rounded-3xl mt-4'>Choose Plan</button>
             </div>
             <div className='bg-neutral-900 rounded-3xl p-5 w-[350px] h-[400px] flex flex-col justify-between items-center gap-6 shadow-2xl hover:scale-105 duration-500'>
-              <h2 className='text-3xl font-bold mt-5'>Premium</h2>
+              <h2 className='text-3xl font-bold mt-5 text-blue-400'>Premium</h2>
               <p className='text-4xl font-bold'>$19.99</p>
               <ul className='text-center flex flex-col gap-1 font-medium'>
                 <li>Access to 200+ games</li>
@@ -50,7 +51,7 @@ const Home = () => {
               <button className='bg-gradient-to-l mb-5 font-semibold from-cyan-500 to-blue-500 text-white py-2 px-4 w-[150px] shadow-2xl hover:scale-110 duration-500 rounded-3xl mt-4'>Choose Plan</button>
             </div>
             <div className='bg-neutral-900 rounded-3xl p-5 w-[350px] h-[400px] flex flex-col justify-between items-center gap-6 shadow-2xl hover:scale-105 duration-500'>
-              <h2 className='text-3xl font-bold mt-5'>Ultimate</h2>
+              <h2 className='text-3xl font-bold mt-5 text-blue-600'>Ultimate</h2>
               <p className='text-4xl font-bold'>$29.99</p>
               <ul className='text-center flex flex-col gap-1 font-medium'>
                 <li>Access to 600+ games</li>
