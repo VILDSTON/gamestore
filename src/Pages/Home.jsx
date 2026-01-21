@@ -1,13 +1,26 @@
 import React, { useEffect } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 import carticon from '../assets/shopping-cart.png'
 
 const Home = () => {
 
+    const goto = useNavigate()
+
+    const onClick = ()=>{
+      goto('/products')
+    }
+
+    const onClick2 = ()=>{
+      goto('/pricing')
+    }
+
+
     useEffect(()=>{
-      Aos.init()
+      Aos.init({
+        duration: 1000
+      })
     }, [])
 
   return (
@@ -38,7 +51,7 @@ const Home = () => {
                 <li>Standard Support</li>
                 <li>Single Device</li>
               </ul>
-              <button className='bg-gradient-to-l mb-5 font-semibold from-cyan-500 to-blue-500 text-white py-2 px-4 w-[150px] shadow-2xl hover:scale-110 duration-500 rounded-3xl mt-4'>Choose Plan</button>
+              <button onClick={onClick2} className='bg-gradient-to-l mb-5 font-semibold from-cyan-500 to-blue-500 text-white py-2 px-4 w-[150px] shadow-2xl hover:scale-110 duration-500 rounded-3xl mt-4'>Choose Plan</button>
             </div>
             <div className='bg-neutral-900 rounded-3xl p-5 w-[350px] h-[400px] flex flex-col justify-between items-center gap-6 shadow-2xl hover:scale-105 duration-500'>
               <h2 className='text-3xl font-bold mt-5 text-blue-400'>Premium</h2>
@@ -48,7 +61,7 @@ const Home = () => {
                 <li>Priority Support</li>
                 <li>Multi-Device</li>
               </ul>
-              <button className='bg-gradient-to-l mb-5 font-semibold from-cyan-500 to-blue-500 text-white py-2 px-4 w-[150px] shadow-2xl hover:scale-110 duration-500 rounded-3xl mt-4'>Choose Plan</button>
+              <button onClick={onClick2} className='bg-gradient-to-l mb-5 font-semibold from-cyan-500 to-blue-500 text-white py-2 px-4 w-[150px] shadow-2xl hover:scale-110 duration-500 rounded-3xl mt-4'>Choose Plan</button>
             </div>
             <div className='bg-neutral-900 rounded-3xl p-5 w-[350px] h-[400px] flex flex-col justify-between items-center gap-6 shadow-2xl hover:scale-105 duration-500'>
               <h2 className='text-3xl font-bold mt-5 text-blue-600'>Ultimate</h2>
@@ -58,7 +71,7 @@ const Home = () => {
                 <li>VIP Access</li>
                 <li>Access to trade</li>
               </ul>
-              <button className='bg-gradient-to-l mb-5 font-semibold from-cyan-500 to-blue-500 text-white py-2 px-4 w-[150px] shadow-2xl hover:scale-110 duration-500 rounded-3xl mt-4'>Choose Plan</button>
+              <button onClick={onClick2} className='bg-gradient-to-l mb-5 font-semibold from-cyan-500 to-blue-500 text-white py-2 px-4 w-[150px] shadow-2xl hover:scale-110 duration-500 rounded-3xl mt-4'>Choose Plan</button>
             </div>
           </div>
         </div>
@@ -104,37 +117,37 @@ const Home = () => {
               <img src="https://cdn.displate.com/artwork/270x380/2023-06-12/6e217abc7f5bb5d0dc56e68752193a11_5c51574f5f2f216f9ef25a0d08fa6400.jpg" alt="" className='rounded-xl h-[300px] w-[220px]'/>
               <p className='text-3xl font-bold text-green-500'>$10.99</p>
               <p className='text-2xl font-bold line-through text-gray-500'>$29.99</p>
-              <button className='bg-gradient-to-l mb-5 font-semibold from-cyan-500 to-blue-500 text-white py-2 px-4 w-[150px] shadow-2xl hover:scale-110 duration-500 rounded-3xl mt-4'>Buy Now</button>
+              <button onClick={onClick} className='bg-gradient-to-l mb-5 font-semibold from-cyan-500 to-blue-500 text-white py-2 px-4 w-[150px] shadow-2xl hover:scale-110 duration-500 rounded-3xl mt-4'>Buy Now</button>
             </div>
             <div className='bg-neutral-900 rounded-3xl p-5 w-[300px] h-[550px] flex flex-col justify-around items-center gap-6 shadow-2xl hover:scale-105 duration-500'>
               <img src="https://athenaposters.ca/wp-content/uploads/2023/01/EXR8837-Valorant-.jpeg" alt="" className='rounded-xl h-[300px] w-[220px]'/>
               <p className='text-3xl font-bold text-green-500'>$7.99</p>
               <p className='text-2xl font-bold line-through text-gray-500'>$19.99</p>
-              <button className='bg-gradient-to-l mb-5 font-semibold from-cyan-500 to-blue-500 text-white py-2 px-4 w-[150px] shadow-2xl hover:scale-110 duration-500 rounded-3xl mt-4'>Buy Now</button>
+              <button onClick={onClick} className='bg-gradient-to-l mb-5 font-semibold from-cyan-500 to-blue-500 text-white py-2 px-4 w-[150px] shadow-2xl hover:scale-110 duration-500 rounded-3xl mt-4'>Buy Now</button>
             </div>
             <div className='bg-neutral-900 rounded-3xl p-5 w-[300px] h-[550px] flex flex-col justify-around items-center gap-6 shadow-2xl hover:scale-105 duration-500'>
               <img src="https://i.pinimg.com/736x/cd/38/d1/cd38d1545ae5e97a7d1a67b5952e7ed1.jpg" alt="" className='rounded-xl h-[300px] w-[220px]'/>
               <p className='text-3xl font-bold text-green-500'>$12.99</p>
               <p className='text-2xl font-bold line-through text-gray-500'>$31.99</p>
-              <button className='bg-gradient-to-l mb-5 font-semibold from-cyan-500 to-blue-500 text-white py-2 px-4 w-[150px] shadow-2xl hover:scale-110 duration-500 rounded-3xl mt-4'>Buy Now</button>
+              <button onClick={onClick} className='bg-gradient-to-l mb-5 font-semibold from-cyan-500 to-blue-500 text-white py-2 px-4 w-[150px] shadow-2xl hover:scale-110 duration-500 rounded-3xl mt-4'>Buy Now</button>
             </div>
             <div className='bg-neutral-900 rounded-3xl p-5 w-[300px] h-[550px] flex flex-col justify-around items-center gap-6 shadow-2xl hover:scale-105 duration-500'>
               <img src="https://w0.peakpx.com/wallpaper/196/649/HD-wallpaper-gta-san-andreas-big-smoke-carl-johnson-cj-games-rockstar-ryder-sweet.jpg" alt="" className='rounded-xl h-[300px] w-[220px]'/>
               <p className='text-3xl font-bold text-green-500'>$6.99</p>
               <p className='text-2xl font-bold line-through text-gray-500'>$10.99</p>
-              <button className='bg-gradient-to-l mb-5 font-semibold from-cyan-500 to-blue-500 text-white py-2 px-4 w-[150px] shadow-2xl hover:scale-110 duration-500 rounded-3xl mt-4'>Buy Now</button>
+              <button onClick={onClick} className='bg-gradient-to-l mb-5 font-semibold from-cyan-500 to-blue-500 text-white py-2 px-4 w-[150px] shadow-2xl hover:scale-110 duration-500 rounded-3xl mt-4'>Buy Now</button>
             </div>
             <div className='bg-neutral-900 rounded-3xl p-5 w-[300px] h-[550px] flex flex-col justify-around items-center gap-6 shadow-2xl hover:scale-105 duration-500'>
               <img src="https://wallpapers.com/images/hd/pubg-mobile-4k-s8f76pp5pm3l5ax3.jpg" alt="" className='rounded-xl h-[300px] w-[220px]'/>
               <p className='text-3xl font-bold text-green-500'>$11.99</p>
               <p className='text-2xl font-bold line-through text-gray-500'>$20.99</p>
-              <button className='bg-gradient-to-l mb-5 font-semibold from-cyan-500 to-blue-500 text-white py-2 px-4 w-[150px] shadow-2xl hover:scale-110 duration-500 rounded-3xl mt-4'>Buy Now</button>
+              <button onClick={onClick} className='bg-gradient-to-l mb-5 font-semibold from-cyan-500 to-blue-500 text-white py-2 px-4 w-[150px] shadow-2xl hover:scale-110 duration-500 rounded-3xl mt-4'>Buy Now</button>
             </div>
             <div className='bg-neutral-900 rounded-3xl p-5 w-[300px] h-[550px] flex flex-col justify-around items-center gap-6 shadow-2xl hover:scale-105 duration-500'>
               <img src="https://i.pinimg.com/736x/4b/17/2a/4b172acbb1a31cf30cfd712e4bb94928.jpg" alt="" className='rounded-xl h-[300px] w-[220px]'/>
               <p className='text-3xl font-bold text-green-500'>$29.99</p>
               <p className='text-2xl font-bold line-through text-gray-500'>$40.99</p>
-              <button className='bg-gradient-to-l mb-5 font-semibold from-cyan-500 to-blue-500 text-white py-2 px-4 w-[150px] shadow-2xl hover:scale-110 duration-500 rounded-3xl mt-4'>Buy Now</button>
+              <button onClick={onClick} className='bg-gradient-to-l mb-5 font-semibold from-cyan-500 to-blue-500 text-white py-2 px-4 w-[150px] shadow-2xl hover:scale-110 duration-500 rounded-3xl mt-4'>Buy Now</button>
             </div>
           </div>
 

@@ -3,11 +3,14 @@ import { useEffect } from 'react'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 import Steamlogo from '../assets/SteamLogo.png'
+import { Link } from 'react-router-dom'
 
 const About = () => {
 
     useEffect(()=>{
-      Aos.init()
+      Aos.init({
+        duration: 1000
+      })
     }, [])
 
   return (
@@ -25,6 +28,74 @@ const About = () => {
           At GameStore, we value our community of gamers and are committed to providing exceptional customer service. Whether you're a casual gamer or a hardcore enthusiast, we are here to help you find the perfect game for your needs. Thank you for choosing GameStore as your go-to destination for all things gaming!
         </p>
       </div>
+
+      <div className='mt-20 flex justify-center items-center flex-col gap-5'>
+          <h2 data-aos = 'fade-up' className='text-3xl font-bold mt-5 text-blue-400'>About Delivery and Payment</h2>
+          <ul data-aos = 'fade-up' className='flex flex-col gap-3 mt-3'>
+            <li className='bg-neutral-900 p-3 rounded-3xl shadow-2xl'>
+              <h3 className='font-semibold'>Delivery</h3>
+              <p>GameStore offers free delivery for all orders over $50</p>
+            </li>
+            <li className='bg-neutral-900 p-3 rounded-3xl shadow-2xl'>
+              <h3 className='font-semibold'>Payment</h3>
+              <p>GameStore accepts a wide range of payment methods, including credit cards, debit cards, and PayPal</p>
+            </li>
+            <li className='bg-neutral-900 p-3 rounded-3xl shadow-2xl'>
+              <h3 className='font-semibold'>Returns</h3>
+              <p>GameStore offers a 30-day return policy for all digital purchases</p>
+            </li>
+            <li className='bg-neutral-900 p-3 rounded-3xl shadow-2xl'>
+              <h3 className='font-semibold'>Prices</h3>
+              <p>GameStore offers competitive prices for all digital purchases</p>
+            </li>
+            <li className='bg-neutral-900 p-3 rounded-3xl shadow-2xl'>
+              <h3 className='font-semibold'>Safety</h3>
+              <p>GameStore takes security seriously and uses industry-standard encryption to protect your personal information</p>
+            </li>
+            <li className='bg-neutral-900 p-3 rounded-3xl shadow-2xl'>
+              <h3 className='font-semibold'>Subscription</h3>
+              <p>GameStore offers a subscription service for regular updates and access to exclusive content</p>
+            </li>
+          </ul>
+      </div>
+
+      <div className='mt-5 mb-20 flex justify-center items-center flex-col gap-5'>
+          <h2 data-aos = 'fade-up' className='text-3xl font-bold mt-5 text-blue-400'>Frequently Asked Questions</h2>
+          <ul data-aos = 'fade-up' className='flex flex-col gap-3 mt-3'>
+            <li className='bg-neutral-900 p-3 rounded-3xl shadow-2xl'>
+              <h3 className='font-semibold'>What is GameStore?</h3>
+              <p>GameStore is an online platform where you can buy and sell video games at fair prices</p>
+            </li>
+            <li className='bg-neutral-900 p-3 rounded-3xl shadow-2xl'>
+              <h3 className='font-semibold'>Why I should believe about security?</h3>
+              <p>GameStore takes security seriously and uses industry-standard encryption to protect your personal information</p>
+            </li>
+            <li className='bg-neutral-900 p-3 rounded-3xl shadow-2xl'>
+              <h3 className='font-semibold'>How do I purchase a game?</h3>
+              <p>You can purchase a game by selecting a pricing plan and following the checkout process</p>
+            </li>
+            <li className='bg-neutral-900 p-3 rounded-3xl shadow-2xl'>
+              <h3 className='font-semibold'>Can I return a game?</h3>
+              <p>Yes, we offer a 30-day return policy for all digital purchases</p>
+            </li>
+            <li className='bg-neutral-900 p-3 rounded-3xl shadow-2xl'>
+              <h3 className='font-semibold'>Can I link the Steam account?</h3>
+              <p>Yes, you can link your Steam account to access your games and friends list</p>
+            </li>
+            <li className='bg-neutral-900 p-3 rounded-3xl shadow-2xl'>
+              <h3 className='font-semibold'>Should I buy a game here?</h3>
+              <p>Yes, we offer a wide selection of games at competitive prices</p>
+            </li>
+            <li className='bg-neutral-900 p-3 rounded-3xl shadow-2xl'>
+              <h3 className='font-semibold'>What if hackers try to hack my account?</h3>
+              <p>We take account security seriously and implement measures to protect your information</p>
+            </li>
+            <li className='bg-neutral-900 p-3 rounded-3xl shadow-2xl'>
+              <h3 className='font-semibold'>How I can sell my game?</h3>
+              <p>You can sell your game by listing it on our <Link to='/create' className='text-blue-400'>Create Page</Link> and setting a price</p>
+            </li>
+          </ul>
+        </div>
 
       <div className='w-full flex flex-col justify-center items-center'>
         <h1 data-aos = 'fade-up' className='text-4xl font-bold text-center mt-20 text-blue-400'>Our Team</h1>
