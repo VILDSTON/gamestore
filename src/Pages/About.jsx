@@ -2,6 +2,7 @@ import React from  'react'
 import { useEffect } from 'react'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
+import Icon from '../assets/Icon.png'
 import Steamlogo from '../assets/SteamLogo.png'
 import { Link } from 'react-router-dom'
 
@@ -18,7 +19,7 @@ const About = () => {
       <h1 data-aos = 'fade-up' className='text-5xl font-bold text-center mt-20 text-blue-400'>About Us</h1>
       <div data-aos = 'fade-up' className='mt-10 bg-neutral-900 rounded-3xl p-10 w-[1200px] h-[800px] justify-center flex-col items-center flex gap-10'>
         <div className='flex justify-center items-center gap-10'>
-          <img src="./src/assets/Icon.png" alt="" className='h-50'/>
+          <img src={Icon} alt="" className='h-50'/>
           <img src={Steamlogo} alt="" className='h-20'/>
         </div>
         <p className='text-lg font-medium leading-8 pb-10'>
