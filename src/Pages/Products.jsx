@@ -27,7 +27,7 @@ const Products = () => {
   return (
     <div>
       <h1 data-aos = 'fade-up' data-aos-duration = '1000' className='text-4xl font-bold text-center mt-10 text-blue-400'>Games</h1>
-      <main data-aos = 'fade-up' data-aos-duration = '1000' className='max-w-7xl mx-auto p-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6'>
+      <main data-aos = 'fade-up' data-aos-duration = '1000' className='max-w-7xl mx-auto mt-10 p-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10'>
         {products.map((p)=>{
 
             if(p.price === 0 || p.price === '0'){
