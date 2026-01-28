@@ -102,28 +102,16 @@ const About = () => {
         <h1 data-aos = 'fade-up' className='text-4xl font-bold text-center mt-20 text-blue-400'>Our Team</h1>
         <div data-aos = 'fade-up' className='mt-10 flex justify-center items-center gap-10 mb-20 flex-wrap w-[90%]'>
             <div className='bg-neutral-900 rounded-3xl p-5 w-[250px] h-[370px] flex flex-col justify-around items-center gap-6 shadow-2xl hover:scale-105 duration-500'>
-              <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="" className='rounded-full h-[150px] w-[150px]'/>
-              <h2 className='text-2xl font-bold'>John Doe</h2>
+              <img src="https://cdn.vectorstock.com/i/500p/54/69/male-user-icon-vector-8865469.jpg" alt="" className='rounded-full h-[150px] w-[150px]'/>
+              <h2 className='text-2xl font-bold'>Sulaymon</h2>
               <p className='text-center text-[10px]'>"I love gaming because it allows me to escape reality and immerse myself in different worlds."</p>
               <p className='text-center text-blue-500 font-bold'>Lead Developer</p>
             </div>
             <div className='bg-neutral-900 rounded-3xl p-5 w-[250px] h-[370px] flex flex-col justify-around items-center gap-6 shadow-2xl hover:scale-105 duration-500'>
-              <img src="https://randomuser.me/api/portraits/women/75.jpg" alt="" className='rounded-full h-[150px] w-[150px]'/>
-              <h2 className='text-2xl font-bold'>Jane Doe</h2>
+              <img src="https://cdn.vectorstock.com/i/500p/54/69/male-user-icon-vector-8865469.jpg" alt="" className='rounded-full h-[150px] w-[150px]'/>
+              <h2 className='text-2xl font-bold'>Azamat</h2>
               <p className='text-center text-[10px]'>"I love gaming because it allows me to express myself and connect with others."</p>
-              <p className='text-center text-blue-500 font-bold'>Marketing Manager</p>
-            </div>
-            <div className='bg-neutral-900 rounded-3xl p-5 w-[250px] h-[370px] flex flex-col justify-around items-center gap-6 shadow-2xl hover:scale-105 duration-500'>
-              <img src="https://randomuser.me/api/portraits/men/76.jpg" alt="" className='rounded-full h-[150px] w-[150px]'/>
-              <h2 className='text-2xl font-bold'>Mike Smith</h2>
-              <p className='text-center text-[10px]'>"I love gaming because it allows me to solve problems and think critically."</p>
-              <p className='text-center text-blue-500 font-bold'>Customer Support</p>
-            </div>
-            <div className='bg-neutral-900 rounded-3xl p-5 w-[250px] h-[370px] flex flex-col justify-around items-center gap-6 shadow-2xl hover:scale-105 duration-500'>
-              <img src="https://randomuser.me/api/portraits/women/76.jpg" alt="" className='rounded-full h-[150px] w-[150px]'/>
-              <h2 className='text-2xl font-bold'>Sara Lee</h2>
-              <p className='text-center text-[10px]'>"I love gaming because it allows me to express my creativity and share my passion with others."</p>
-              <p className='text-center text-blue-500 font-bold'>Content Creator</p>
+              <p className='text-center text-blue-500 font-bold'>Developer</p>
             </div>
         </div>
       </div>
