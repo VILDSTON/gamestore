@@ -120,7 +120,7 @@ const Home = () => {
               <button onClick={onClick} className='bg-gradient-to-l mb-5 font-semibold from-cyan-500 to-blue-500 text-white py-2 px-4 w-[150px] shadow-2xl hover:scale-110 duration-500 rounded-3xl mt-4'>Buy Now</button>
             </div>
             <div className='bg-neutral-900 rounded-3xl p-5 w-[300px] h-[550px] flex flex-col justify-around items-center gap-6 shadow-2xl hover:scale-105 duration-500'>
-              <img src="https://athenaposters.ca/wp-content/uploads/2023/01/EXR8837-Valorant-.jpeg" alt="" className='rounded-xl h-[300px] w-[220px]'/>
+              <img src="https://i.pinimg.com/736x/79/aa/f7/79aaf76e647b1eac1329b41a661ab60d.jpg" alt="" className='rounded-xl h-[300px] w-[220px]'/>
               <p className='text-3xl font-bold text-green-500'>$7.99</p>
               <p className='text-2xl font-bold line-through text-gray-500'>$19.99</p>
               <button onClick={onClick} className='bg-gradient-to-l mb-5 font-semibold from-cyan-500 to-blue-500 text-white py-2 px-4 w-[150px] shadow-2xl hover:scale-110 duration-500 rounded-3xl mt-4'>Buy Now</button>
