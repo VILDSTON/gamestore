@@ -26,7 +26,7 @@ const Buypage = () => {
         <div className='flex-col justify-center items-center w-full' style={{display: display}}>
           <h1 data-aos='fade-up' className='text-4xl font-bold text-center mt-10 text-blue-400'>Buy Page</h1>
           <div>
-              <form onSubmit={onSubmit} data-aos='fade-up' className='mt-10 flex flex-col justify-center items-center gap-2 bg-neutral-900 p-10 rounded-3xl w-[500px] mx-auto'>
+              <form onSubmit={onSubmit} data-aos='fade-up' className='mt-10 flex flex-col justify-center items-center gap-2 bg-neutral-900 border-2 border-neutral-800 p-10 rounded-3xl w-[500px] mx-auto'>
                   <input type="text" inputMode="numeric" pattern="[0-9]*" maxlength="19" autocomplete="cc-number" placeholder='Your Card Number'  className='w-full p-3 mb-4 rounded-xl bg-neutral-800 text-white focus:scale-110 duration-500'/>
                   <input type="text" inputMode='numeric' name="card-expiry" placeholder="MM/YY"  pattern="[0-9]{2}[0-9]{2}" maxlength="4" required className='w-full p-3 mb-4 rounded-xl bg-neutral-800 text-white focus:scale-110 duration-500'/>
                   <input type="text" inputMode='numeric' name="card-cvc" placeholder="CVC" pattern="[0-9]{3,4}" maxlength="4" required className='w-full p-3 mb-4 rounded-xl bg-neutral-800 text-white focus:scale-110 duration-500'/>

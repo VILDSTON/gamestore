@@ -36,8 +36,8 @@ const Products = () => {
             }
 
             return(
-              <div id='card' key={p.id} className="bg-neutral-900 rounded-3xl shadow-2xl p-4 w-[260px] h-[450px] flex flex-col justify-around items-center hover:scale-110 duration-500">
-                <img src={p.image} className="w-[200px] h-[250px] rounded-xl" />
+              <div id='card' key={p.id} className="bg-neutral-900 border-2 border-neutral-800 rounded-3xl shadow-2xl p-4 w-[280px] h-[500px] flex flex-col justify-around items-center hover:scale-110 duration-500">
+                <img src={p.image} className="w-[300px] h-[300px] rounded-xl border-2 border-neutral-800" />
                 <h2 id='title' className="text-lg font-bold mt-2 text-center">{p.title}</h2>
                 <p id='price' className="text-green-500 font-semibold"><span>{p.dollar}</span>{p.price}</p>
                 <p id='description' className='hidden'>{p.description}</p>

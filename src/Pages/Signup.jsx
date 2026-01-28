@@ -34,7 +34,7 @@ const Signup = () => {
     <div>
     <h1 data-aos='fade-up' className='text-4xl font-bold text-center mt-10 text-blue-400'>Sign Up</h1>
       <form data-aos='fade-up' onSubmit={handleSubmit} className='flex flex-col justify-center items-center'>
-        <div className='h-[500px] w-[400px] mt-10 bg-neutral-900 p-10 flex flex-col justify-around items-center rounded-3xl shadow-2xl'>
+        <div className='h-[500px] w-[400px] mt-10 bg-neutral-900 border-2 border-neutral-800 p-10 flex flex-col justify-around items-center rounded-3xl shadow-2xl'>
           <div className='w-full'>
             <label className='text-lg font-semibold mb-2'>Username</label>
             <input ref={username} type="text" className='w-full p-3 mb-4 rounded-xl bg-neutral-800 text-white focus:scale-110 duration-500' required/>

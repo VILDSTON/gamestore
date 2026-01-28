@@ -40,7 +40,7 @@ const Create = () => {
   return (
     <div className='flex flex-col justify-center items-center w-full text-white'>
       <h1 data-aos = 'fade-up' className='text-5xl font-bold text-center mt-20 text-blue-400'>Sell Your Game</h1>
-      <form data-aos = 'flip-up' onSubmit={handleSubmit} className='mt-10 flex flex-col justify-center items-center gap-2 bg-neutral-900 p-10 rounded-3xl w-[500px]'>
+      <form data-aos = 'flip-up' onSubmit={handleSubmit} className='mt-10 flex flex-col justify-center items-center gap-2 bg-neutral-900 border-2 border-neutral-800 p-10 rounded-3xl w-[500px]'>
         <input ref={title} type="text" placeholder='Game Title' className='w-full h-12 rounded-xl p-3 mb-4 bg-neutral-800 focus:scale-110 duration-500'/>
         <input ref={imageUrl} type="text" placeholder='Game Image URL' className='w-full h-12 rounded-xl p-3 mb-4 bg-neutral-800 focus:scale-110 duration-500'/>
         <input ref={price} min={0} type="number" placeholder='Game Price' className='w-full h-12 rounded-xl p-3 mb-4 bg-neutral-800 focus:scale-110 duration-500'/>
